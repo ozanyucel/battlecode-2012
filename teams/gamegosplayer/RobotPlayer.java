@@ -1,6 +1,6 @@
 package gamegosplayer;
 
-import battlecode.common.*;
+import battlecode.common.RobotController;
 
 public class RobotPlayer {
 

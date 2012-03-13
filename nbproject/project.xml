@@ -11,15 +11,15 @@
             <properties/>
             <folders>
                 <source-folder>
+                    <label>Battlecode 2010</label>
+                    <location>.</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
                     <label>teams</label>
                     <type>java</type>
                     <location>teams</location>
-                    <encoding>windows-1254</encoding>
-                </source-folder>
-                <source-folder>
-                    <label>Battlecode 2010</label>
-                    <location>.</location>
-                    <encoding>windows-1254</encoding>
+                    <encoding>UTF-8</encoding>
                 </source-folder>
             </folders>
             <ide-actions>
@@ -54,12 +54,13 @@
                     <ide-action name="run"/>
                 </context-menu>
             </view>
+            <subprojects/>
         </general-data>
-        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/1">
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/3">
             <compilation-unit>
                 <package-root>teams</package-root>
                 <classpath mode="compile">lib/battlecode-client.jar;lib/battlecode-player.jar;lib/battlecode-server.jar</classpath>
-                <source-level>1.5</source-level>
+                <source-level>1.7</source-level>
             </compilation-unit>
         </java-data>
     </configuration>
