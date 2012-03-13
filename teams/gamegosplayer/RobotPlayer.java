@@ -1,8 +1,6 @@
 package gamegosplayer;
 
-import battlecode.common.RobotController;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import battlecode.common.RobotController;;
 
 public class RobotPlayer {
 
@@ -20,7 +18,8 @@ public class RobotPlayer {
                 }
                 myRC.yield();
             } catch (Exception e) {
-                Logger.getLogger(RobotPlayer.class.getName()).log(Level.SEVERE, null, e);
+                System.err.println("Noluyo lan?");
+                e.printStackTrace();
             }
         }
     }
