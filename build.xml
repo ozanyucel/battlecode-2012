@@ -47,7 +47,7 @@
 	<scalac
 		srcdir="${path.teams}"
     	destdir="${path.bin}"
-    	target="jvm-1.5"
+    	target="jvm-1.7"
 		classpathref="classpath.run">
 		<include name="**/*.scala"/>
 		<include name="**/*.java"/>
@@ -56,11 +56,12 @@
 
   <target name="build" depends="-init,build-scala">
     <javac 
-     classpathref="classpath.run" 
+     classpathref="classpath.run"
+     includeantruntime="false"
      destdir="${path.bin}" 
      srcdir="${path.teams}"
-	 target="1.6"
-	 source="1.6"
+	 target="1.7"
+	 source="1.7"
      debug="true">
       <compilerarg line="-Xlint"/>
     </javac>

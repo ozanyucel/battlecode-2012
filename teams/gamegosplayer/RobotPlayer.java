@@ -1,6 +1,8 @@
 package gamegosplayer;
 
 import battlecode.common.RobotController;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class RobotPlayer {
 
@@ -18,8 +20,7 @@ public class RobotPlayer {
                 }
                 myRC.yield();
             } catch (Exception e) {
-                System.out.println("caught exception:");
-                e.printStackTrace();
+                Logger.getLogger(RobotPlayer.class.getName()).log(Level.SEVERE, null, e);
             }
         }
     }
